@@ -1,0 +1,241 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    background-color: #333;
+    color: #222;
+    overflow-x: hidden;
+    margin: 0px;
+    
+    
+}
+
+p,h1,small{
+    margin :0px;
+    padding:0px;
+}
+small{
+    font-style: italic;
+}
+.personal{
+    text-decoration: underline;
+}
+
+  .content{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #a1c3ff;
+    padding-top: 10%;
+    transform-origin: top left;
+    padding-bottom: 10%;
+    transition: transform 0.4s linear;
+  }
+  .show-nav{
+    transform: rotate(5deg);
+
+  }
+   
+
+   .circle-container{
+    position: fixed;
+    top: -100px;
+    left: -100px;
+  } 
+
+  .circle{
+    height: 200px;
+    width: 200px;
+    background-color: #0151cc;
+    position: relative;
+    border-radius: 50%;
+    transition: transform 0.4s linear;
+  }
+
+  .circle button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .circle button#open{
+    left: 60%;
+  }
+  .circle button#close{
+    top: 37%;
+    
+    transform: rotate(-90deg);
+    transform-origin: top left;
+  }
+
+
+.content.show-nav .circle{
+    transform: rotate(90deg);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  nav{
+    position: fixed;
+    top: 10px;
+    right: 100px;
+    
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+   
+
+    
+  }
+  nav ul li{
+     margin-right: 20px;
+     transform: translateY(-60px);
+    transition: transform 0.4s ease;
+  }
+
+  nav ul li+li{
+    margin-top: 20px;
+    transform: translateY(-90px);
+   
+ }
+
+ nav ul li+li+li{
+    margin-top: 40px;
+    transform: translateY(-110px);
+ }
+
+ .content.show-nav + nav li{
+    transform: translateY(0px);
+ }
+
+ nav ul li:hover{
+  
+    
+    color: #ff004f;
+ }
+
+ nav ul li:active{
+    opacity: 0.5;
+ }
+
+  
+ 
+
+  
+
+
+
+/* ................Career Objective......... */
+
+.container{
+    width: 1100px;
+    margin: 0px auto 10px auto;
+    
+    
+}
+
+.heading h2{
+    background-color: #0151cc;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 0px;
+    
+}
+
+.heading p{
+   padding:0px 10px
+}
+/* ......................... */
+
+
+
+.download{
+
+    background-color: #0151cc;
+    color: white;
+    font-size: 20px;
+    padding: 5px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+        
+     display: inline-block;
+     
+    
+    
+ 
+}
+.Down a{
+    text-decoration: none;
+}
+
+.download:hover{
+    opacity: 0.7;
+
+}
+
+.download:active{
+    border: 1px solid #0151cc;
+    background-color: white;
+    color: black;
+
+}
+.Down{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+
+@media  (max-width:768px) {
+    
+    
+
+    .container{
+        width: 450px;
+       
+  
+    }
+    
+}
+@media screen and (min-width: 769px) and (max-width: 950px){
+    .container{
+        width: 700px;
+       
+    }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1150px){
+    .container{
+        width: 900px;
+  
+    }
+}
+
+
